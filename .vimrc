@@ -5,8 +5,10 @@ nmap ,cpp :!g++ -std=c++17 % -o %< && %< <CR>	"Run C++ Compiler
 nmap ,jvc :!javac % && java %< <CR>		"Run Java Compiler
 
 filetype plugin indent on	"Enable indentation based on file type
+filetype plugin on
 syntax enable			"Enable syntax highlighting
 
+set nocompatible
 set guifont=Lucida_Console:h12	"Set Font and Font Size
 set lines=900 columns=900	"Start Vim at Full Screen
 set background=light		"Set background to white
